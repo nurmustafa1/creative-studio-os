@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Creative Studio OS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header><div><p class="eyebrow">OPEN SOURCE · CREATIVE OPERATIONS</p><h1>Creative Studio OS</h1><p class="muted">A lightweight workspace for photographers and creative teams.</p></div><button id="clear" class="secondary">Clear demo data</button></header>
+    <section class="stats" aria-label="Project overview"><article><span>Projects</span><strong id="total">0</strong></article><article><span>Confirmed</span><strong id="confirmed">0</strong></article><article><span>In progress</span><strong id="progress">0</strong></article><article><span>Delivered</span><strong id="delivered">0</strong></article></section>
+    <section class="panel"><h2>Add a project</h2><form id="project-form"><label>Client name<input name="client" maxlength="80" placeholder="e.g. Ayesha & Ali" required></label><label>Event / project<input name="event" maxlength="80" placeholder="e.g. Nikkah" required></label><label>Event date<input name="date" type="date" required></label><label>Status<select name="status"><option>Inquiry</option><option>Confirmed</option><option>In progress</option><option>Delivered</option></select></label><button type="submit">Add project</button></form></section>
+    <section class="panel"><div class="heading"><h2>Projects</h2><label class="filter">Filter <select id="filter"><option>All</option><option>Inquiry</option><option>Confirmed</option><option>In progress</option><option>Delivered</option></select></label></div><div id="projects" class="projects" aria-live="polite"></div></section>
+    <footer>Stored locally in your browser. Do not use this demo for sensitive client information.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
